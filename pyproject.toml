@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "fig-data-challenge"
+version = "0.1.0"
+description = "Fig data challenge for interviews"
+authors = ["Food Is Good <dev@foodisgood.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.0"
+flake8 = "^7.0.0"
+flake8-length = "^0.3.1"
+black = "^24.3.0"
+pytest = "^8.1.1"
+pytest-mock = "^3.14.0"
+isort = "^5.13.2"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+target-version = ['py311']
+
+[tool.isort]
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 90
+multi_line_output = 3
+use_parentheses = true
